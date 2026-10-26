@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kvroute"
+version = "0.1.0"
+description = "Cache-aware request router for vLLM replicas (LMetric scoring), with a trace-replay benchmark"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Jaya Chandra Dadi" }]
+requires-python = ">=3.10"
+dependencies = ["aiohttp>=3.9", "prometheus_client>=0.20"]
+
+[project.optional-dependencies]
+hf = ["transformers>=4.40"]
+plot = ["matplotlib"]
+test = ["pytest>=8", "pytest-asyncio>=0.23"]
+
+[project.scripts]
+kvroute = "kvroute.router:main"
+kvroute-mock = "kvroute.mock_replica:main"
+kvroute-bench = "kvroute.bench:main"
+kvroute-replay = "kvroute.replay:main"
+kvroute-trace = "kvroute.traces:main"
+
+[tool.setuptools.packages.find]
+include = ["kvroute*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "strict"

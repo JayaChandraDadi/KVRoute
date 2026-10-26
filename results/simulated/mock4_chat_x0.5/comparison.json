@@ -1,0 +1,122 @@
+[
+  {
+    "policy": "round_robin",
+    "requests": 546,
+    "errors": 0,
+    "duration_s": 71.81413207500009,
+    "req_per_s": 7.60296036760254,
+    "output_tok_per_s": 1251.55032029258,
+    "ttft_p50_s": 0.024136677499882353,
+    "ttft_p90_s": 0.046524363000116864,
+    "ttft_p99_s": 0.06561356965025879,
+    "ttft_mean_s": 0.02689160515383564,
+    "e2e_p50_s": 0.7975474384998051,
+    "e2e_p99_s": 1.2538839767497847,
+    "tpot_p50_s": 0.004600126434077503,
+    "router_est_hit_rate": 0.5568360389018442,
+    "replica_hit_rate": 0.5568360389018442,
+    "requests_per_replica": {
+      "replica0": 137,
+      "replica1": 137,
+      "replica2": 136,
+      "replica3": 136
+    },
+    "load_imbalance": 1.0036630036630036
+  },
+  {
+    "policy": "least_load",
+    "requests": 546,
+    "errors": 0,
+    "duration_s": 71.73432098800004,
+    "req_per_s": 7.611419366349572,
+    "output_tok_per_s": 1252.942786132112,
+    "ttft_p50_s": 0.024159096500170563,
+    "ttft_p90_s": 0.04798501650020626,
+    "ttft_p99_s": 0.07047086019942969,
+    "ttft_mean_s": 0.02764258235346637,
+    "e2e_p50_s": 0.7917121274995225,
+    "e2e_p99_s": 1.2568588771500344,
+    "tpot_p50_s": 0.004573681086420743,
+    "router_est_hit_rate": 0.5605588363479774,
+    "replica_hit_rate": 0.5605588363479774,
+    "requests_per_replica": {
+      "replica0": 159,
+      "replica1": 140,
+      "replica2": 127,
+      "replica3": 120
+    },
+    "load_imbalance": 1.164835164835165
+  },
+  {
+    "policy": "prefix",
+    "requests": 546,
+    "errors": 0,
+    "duration_s": 71.68095737299973,
+    "req_per_s": 7.617085764617081,
+    "output_tok_per_s": 1253.875552084283,
+    "ttft_p50_s": 0.017892141499942227,
+    "ttft_p90_s": 0.02276538200021605,
+    "ttft_p99_s": 0.0326777058499374,
+    "ttft_mean_s": 0.017689729000028905,
+    "e2e_p50_s": 0.7663509254998644,
+    "e2e_p99_s": 1.233354276349837,
+    "tpot_p50_s": 0.004481129531786898,
+    "router_est_hit_rate": 0.7926780353214299,
+    "replica_hit_rate": 0.7926780353214299,
+    "requests_per_replica": {
+      "replica0": 131,
+      "replica1": 153,
+      "replica2": 169,
+      "replica3": 93
+    },
+    "load_imbalance": 1.2380952380952381
+  },
+  {
+    "policy": "linear",
+    "requests": 546,
+    "errors": 0,
+    "duration_s": 71.75705525000012,
+    "req_per_s": 7.609007896125992,
+    "output_tok_per_s": 1252.545825450381,
+    "ttft_p50_s": 0.01862644349967013,
+    "ttft_p90_s": 0.02782134049994056,
+    "ttft_p99_s": 0.04506841654988411,
+    "ttft_mean_s": 0.01975259346519847,
+    "e2e_p50_s": 0.7668869345002349,
+    "e2e_p99_s": 1.1817580135496881,
+    "tpot_p50_s": 0.0044879109291973895,
+    "router_est_hit_rate": 0.7478655556153642,
+    "replica_hit_rate": 0.7478655556153642,
+    "requests_per_replica": {
+      "replica0": 142,
+      "replica1": 134,
+      "replica2": 140,
+      "replica3": 130
+    },
+    "load_imbalance": 1.0402930402930404
+  },
+  {
+    "policy": "lmetric",
+    "requests": 546,
+    "errors": 0,
+    "duration_s": 71.67239826700006,
+    "req_per_s": 7.617995395744883,
+    "output_tok_per_s": 1254.0252896962534,
+    "ttft_p50_s": 0.01780248399973061,
+    "ttft_p90_s": 0.02360640799997782,
+    "ttft_p99_s": 0.036286535900080664,
+    "ttft_mean_s": 0.017912690170320714,
+    "e2e_p50_s": 0.7560190649996912,
+    "e2e_p99_s": 1.1963026381998132,
+    "tpot_p50_s": 0.004497226051022572,
+    "router_est_hit_rate": 0.7852324404291635,
+    "replica_hit_rate": 0.7852324404291635,
+    "requests_per_replica": {
+      "replica0": 131,
+      "replica1": 147,
+      "replica2": 138,
+      "replica3": 130
+    },
+    "load_imbalance": 1.0769230769230769
+  }
+]
